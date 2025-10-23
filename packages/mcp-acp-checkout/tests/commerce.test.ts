@@ -158,9 +158,9 @@ describe('CommerceTools', () => {
       })
     })
     
-    it('should return 6 MCP tools', () => {
+    it('should return 10 MCP tools', () => {
       const tools = commerce.getMCPTools()
-      expect(tools).toHaveLength(6)
+      expect(tools).toHaveLength(10)
     })
     
     it('should have correct tool names', () => {

@@ -1,0 +1,12 @@
+Add comprehensive E2E tests and test infrastructure
+
+- Add end-to-end test suite (29 tests covering complete SDK flow)
+- Test product search, cart operations, buyer info, and payment flows
+- Add Jest configuration with ESM support
+- Add test documentation and setup instructions
+- Update test scripts with --forceExit for Stripe cleanup
+- Fix test suite to expect 10 MCP tools (not 6)
+- Tests pass without Stripe key (skips integration tests)
+
+All tests passing ✅
+

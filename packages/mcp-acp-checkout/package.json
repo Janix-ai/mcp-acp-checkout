@@ -8,7 +8,9 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "test": "jest",
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest --forceExit",
+    "test:watch": "NODE_OPTIONS=--experimental-vm-modules jest --watch",
+    "test:coverage": "NODE_OPTIONS=--experimental-vm-modules jest --coverage --forceExit",
     "lint": "eslint src --ext .ts",
     "prepublishOnly": "npm run build"
   },
