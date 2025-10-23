@@ -2,25 +2,28 @@
  * Utility functions for the commerce SDK
  */
 
+import { randomBytes } from 'crypto'
 import type { Product, CommerceConfig } from '../types/index.js'
 
 /**
- * Generate a random ID
+ * Generate a cryptographically secure random ID
  * Used for session IDs, order IDs, etc.
  * 
+ * SECURITY: Uses Node.js crypto.randomBytes for cryptographically
+ * secure random number generation (not Math.random)
+ * 
  * @param prefix - Optional prefix (e.g., "cs_" for checkout session)
- * @param length - Length of random part (default: 16)
- * @returns Random ID string
+ * @param length - Length of random part (default: 24 for high entropy)
+ * @returns Cryptographically secure random ID string
  */
-export function generateId(prefix: string = '', length: number = 16): string {
-  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789'
-  let result = prefix
+export function generateId(prefix: string = '', length: number = 24): string {
+  // Generate random bytes (more bytes than needed for base64url encoding)
+  const bytes = randomBytes(Math.ceil(length * 0.75))
   
-  for (let i = 0; i < length; i++) {
-    result += chars.charAt(Math.floor(Math.random() * chars.length))
-  }
+  // Convert to base64url (URL-safe base64) and trim to desired length
+  const randomPart = bytes.toString('base64url').slice(0, length)
   
-  return result
+  return prefix + randomPart
 }
 
 /**

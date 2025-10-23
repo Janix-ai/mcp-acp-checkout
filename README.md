@@ -11,7 +11,7 @@ Built on **Stripe** and the **Agentic Commerce Protocol (ACP)**.
 
 ## 🎯 What This Does
 
-Enable AI agents to purchase from your MCP server in **5 minutes**:
+Enable AI agents to purchase from your MCP server:
 - 🛒 Shopping cart management
 - 💳 Secure Stripe payments  
 - 🌐 Browser checkout (cards, Apple Pay, Google Pay, Link)
@@ -172,8 +172,7 @@ A complete reference implementation you can:
 ✅ Works with ChatGPT (ACP-compliant)  
 ✅ Real Stripe Checkout integration  
 ✅ Test mode verified  
-
-See [`TESTED-AND-WORKING.md`](./TESTED-AND-WORKING.md) for full test results.
+✅ 29 automated tests passing
 
 ---
 
@@ -190,17 +189,15 @@ See [`TESTED-AND-WORKING.md`](./TESTED-AND-WORKING.md) for full test results.
 
 ## 🌟 Why Use This SDK?
 
-**Add commerce to your MCP server in minutes, not months.**
+**Add commerce to your MCP server quickly and easily.**
 
 ### Without this SDK:
-- ❌ Build shopping cart from scratch (2-3 weeks)
-- ❌ Implement ACP protocol yourself (2-3 weeks)
-- ❌ Integrate Stripe payment flows (1-2 weeks)
-- ❌ Handle session management (1 week)
-- ❌ Test across Claude, Cursor, ChatGPT (1 week)
-- ❌ Deal with edge cases and errors (ongoing)
-
-**Total: 2-3 months of development**
+- ❌ Build shopping cart from scratch
+- ❌ Implement ACP protocol yourself
+- ❌ Integrate Stripe payment flows
+- ❌ Handle session management
+- ❌ Test across multiple AI clients
+- ❌ Deal with edge cases and errors
 
 ### With this SDK:
 ```typescript
@@ -211,7 +208,7 @@ const commerce = new CommerceTools({ products, stripe, onPurchase })
 const tools = commerce.getMCPTools()
 ```
 
-**Total: 15 minutes to working commerce** ✨
+**Get working commerce with minimal code.** ✨
 
 ---
 
