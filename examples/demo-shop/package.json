@@ -1,0 +1,25 @@
+{
+  "name": "mcp-commerce-server",
+  "version": "1.0.0",
+  "description": "MCP server for commerce - sell products via Claude, Cursor, and ChatGPT",
+  "private": true,
+  "scripts": {
+    "build": "npm run build:web && npm run build:server",
+    "build:web": "cd web && npm install && npm run build",
+    "build:server": "cd server && npm install && npm run build",
+    "dev:web": "cd web && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "start": "cd server && npm start"
+  },
+  "keywords": [
+    "mcp",
+    "commerce",
+    "stripe",
+    "claude",
+    "cursor",
+    "chatgpt"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+

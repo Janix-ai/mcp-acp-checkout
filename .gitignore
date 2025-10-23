@@ -1,0 +1,51 @@
+# Project-specific (planning docs)
+llm-docs/
+RELEASE-PLAN.md
+CURRENT-STATUS.md
+GITHUB-SETUP.md
+READY-FOR-LAUNCH.md
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+
+# Build outputs
+dist/
+build/
+*.tsbuildinfo
+
+# TypeScript
+*.js.map
+*.d.ts.map
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Testing
+coverage/
+.nyc_output/
+
+# Logs
+logs/
+*.log
+
+# Temporary
+*.tmp
+.cache/

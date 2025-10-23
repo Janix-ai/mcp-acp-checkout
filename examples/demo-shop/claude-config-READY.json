@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "commerce": {
+      "command": "node",
+      "args": [
+        "/Users/scott/AI/ACPcheckout/mcp-commerce-server/server/dist/index.js"
+      ],
+      "env": {
+        "STRIPE_SECRET_KEY": "sk_test_YOUR_KEY_HERE"
+      }
+    }
+  }
+}
+

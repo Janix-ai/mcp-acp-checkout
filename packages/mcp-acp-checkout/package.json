@@ -1,0 +1,55 @@
+{
+  "name": "mcp-acp-checkout",
+  "version": "1.0.0",
+  "description": "Add ACP-compliant checkout to any MCP server. Works with Claude, Cursor, ChatGPT.",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "acp",
+    "checkout",
+    "model-context-protocol",
+    "agentic-commerce-protocol",
+    "shopping-cart",
+    "payments",
+    "stripe",
+    "chatgpt",
+    "claude",
+    "cursor",
+    "ai-agents",
+    "typescript"
+  ],
+  "author": "Scott Wilcox <scott@janix.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Janix-ai/mcp-acp-checkout.git"
+  },
+  "homepage": "https://github.com/Janix-ai/mcp-acp-checkout#readme",
+  "bugs": {
+    "url": "https://github.com/Janix-ai/mcp-acp-checkout/issues"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.2",
+    "stripe": "^17.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "@types/jest": "^29.5.11"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+

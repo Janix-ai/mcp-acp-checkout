@@ -1,0 +1,45 @@
+# Source files (only include dist/)
+src/
+tsconfig.json
+*.tsbuildinfo
+
+# Tests
+tests/
+*.test.ts
+*.spec.ts
+coverage/
+
+# Development files
+node_modules/
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Config files
+.env
+.env.*
+.DS_Store
+
+# Git files
+.git/
+.gitignore
+.gitattributes
+
+# Internal documentation (exclude from package)
+PROJECT-SUMMARY.md
+
+# CI/CD (if added later)
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Note: These ARE included in the package:
+# - README.md
+# - LICENSE
+# - GETTING-STARTED.md
+# - PAYMENT-FLOWS.md
+# - SECURITY.md
+# - CHANGELOG.md
+# - examples/ (helpful for users)
+# - dist/ (the compiled code)
