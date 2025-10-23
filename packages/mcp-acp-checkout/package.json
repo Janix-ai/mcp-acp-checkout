@@ -1,6 +1,6 @@
 {
   "name": "mcp-acp-checkout",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Add ACP-compliant checkout to any MCP server. Works with Claude, Cursor, ChatGPT.",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
