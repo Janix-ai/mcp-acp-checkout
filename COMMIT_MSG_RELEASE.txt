@@ -1,0 +1,7 @@
+Prepare for v0.1.0 beta release
+
+- Updated README (removed beta warning, version number is clear)
+- Updated TODO with release checklist
+- Verified: npm audit (0 vulnerabilities)
+- Verified: npm pack (44.6 kB, all files included)
+- Ready for GitHub + npm publication
