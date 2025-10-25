@@ -1,0 +1,8 @@
+Fix: Use default Stripe API version for universal compatibility
+
+- Removed apiVersion '2025-02-24.acacia' (not available on all accounts)
+- Now uses default Stripe API version (works everywhere)
+- Verified with successful test payment via Claude Desktop
+- Demo shop tested end-to-end with Stripe Checkout
+
+Status: Ready for v0.1.0 beta release

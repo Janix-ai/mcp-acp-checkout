@@ -45,7 +45,7 @@ export class PaymentManager {
     // Initialize Stripe client
     // The Stripe constructor requires API key and optional config
     this.stripe = new Stripe(config.secretKey, {
-      apiVersion: '2025-02-24.acacia', // Use latest ACP-compatible version
+      // apiVersion: '2025-02-24.acacia', // Temporarily disabled - may not be available on all accounts
       typescript: true // Enable TypeScript types
     })
     

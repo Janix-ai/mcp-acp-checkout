@@ -25,9 +25,9 @@ import { dirname, join } from 'node:path'
 
 // Import our commerce SDK
 // @ts-ignore - local development uses relative path, published version uses: import { CommerceTools } from 'mcp-acp-checkout'
-import { CommerceTools } from '../../../packages/mcp-acp-checkout/dist/index.js'
+import { CommerceTools } from '../../../../packages/mcp-acp-checkout/dist/index.js'
 // @ts-ignore
-import type { Order } from '../../../packages/mcp-acp-checkout/dist/types/index.js'
+import type { Order } from '../../../../packages/mcp-acp-checkout/dist/types/index.js'
 
 // Import product catalog
 import { products } from './products.js'
